@@ -24,4 +24,9 @@
         WHERE id=#{id}
     </delete>
 
+ <update id="modify" >
+        UPDATE reservation
+        SET roomnum=#{roomnum}
+        WHERE id=#{id}
+    </update>
 </mapper>

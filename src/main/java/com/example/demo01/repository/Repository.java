@@ -11,9 +11,11 @@ public interface Repository {
     Reservation findOne(int id);
     boolean save(Reservation reservation);//새글쓰기
 
-     List<Reservation> viewall(); //전체목록 조회
+    List<Reservation> viewall(); //전체목록 조회
 
-    Reservation delete(int id);
+    int delete(int id);
 
+    int modify(int id);
 
 }
+/* Reservation modify(int roomnum);*/
