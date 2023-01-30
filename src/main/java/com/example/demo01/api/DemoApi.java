@@ -56,7 +56,6 @@ public class DemoApi {
     public ResponseEntity<?> delete(@PathVariable int id){
         log.info("목록 삭제 기능 스타트");
         try {
-
             List<Reservation> reservations = service.deleteServ(id);
             if(reservations==null){
                 log.info("실패");

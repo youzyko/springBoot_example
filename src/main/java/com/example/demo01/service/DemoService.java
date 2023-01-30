@@ -50,17 +50,13 @@ public class DemoService {
     }
 
     //삭제하기
-    public List<Reservation> deleteServ(int id) {
+    public List<Reservation>deleteServ(int id) {
         log.info("삭제 service 진행");
-        int delete = repository.delete(id);
-        if (delete==0){
-            log.info("삭제 실패");
 
-        }else {
+        boolean delete = repository.delete(id);
 
-        }
-        return delete;
-       // return delete;
+       return repository.viewall();
+
     }//delete end
 
     public int roomupdate(int id) {

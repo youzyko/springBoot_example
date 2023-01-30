@@ -22,6 +22,7 @@
     <delete id="delete">
         DELETE FROM reservation
         WHERE id=#{id}
+
     </delete>
 
  <update id="modify" >

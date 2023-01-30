@@ -13,7 +13,8 @@ public interface Repository {
 
     List<Reservation> viewall(); //전체목록 조회
 
-    int delete(int id);
+    boolean delete(int id); //삭제후 목록좋
+
 
     int modify(int id);
 
